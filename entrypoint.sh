@@ -1,6 +1,6 @@
 export CONFIG=$client_config
 
-echo ${CONFIG} | base64 -d -w 0 >> /etc/openvpn/ovpn.conf
+echo `${CONFIG} | base64 -d -w 0` > /etc/openvpn/ovpn.conf
 
 cat /etc/openvpn/ovpn.conf
 
