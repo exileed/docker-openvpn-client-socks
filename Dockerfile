@@ -8,6 +8,7 @@
 
 FROM alpine
 
+EXPOSE 1080
 
 COPY sockd.sh /usr/local/bin/
 
